@@ -3,26 +3,16 @@
 ################################################################
 api:
   # Dashboard
-  # true = default
-  # 
+  #
+  #
   dashboard: true
-  #
-  # insecure: false is default
-  #
-  insecure: false
-
-################################################################
-# Enable Healthcheck
-################################################################
-ping: {}
-
+  insecure: true
 ################################################################
 # Docker configuration backend
 ################################################################
 providers:
   docker:
     exposedByDefault: false
-    swarmMode: true
 
 ################################################################
 # Traefik Logging -  DEBUG, PANIC, FATAL, ERROR, WARN, and INFO (DEFAULT is ERROR)
@@ -42,11 +32,11 @@ entryPoints:
 ################################################################
 # Challenege DNS
 ################################################################
-certificatesResolvers:
-  myresolver:
-    acme:
-      email: brian@56k.cloud
-      storage: acme.json
-      dnsChallenge:
-        provider: digitalocean
-        delayBeforeCheck: 0
+# certificatesResolvers:
+#   myresolver:
+#     acme:
+#       email: your_email@example.com 
+#       storage: acme.json
+#       dnsChallenge:
+#         provider: digitalocean
+#         delayBeforeCheck: 0
