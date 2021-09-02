@@ -34,8 +34,8 @@ entryPoints:
 certificatesResolvers:
   myresolver:
     acme:
-      email: shayj292@icloud.com
+      email: your_email@example.com 
       storage: acme.json
       dnsChallenge:
-        provider: cloudflare
+        provider: digitalocean
         delayBeforeCheck: 0

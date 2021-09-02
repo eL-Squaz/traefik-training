@@ -24,7 +24,7 @@ services:
      # We set a label to tell Traefik to assign a hostname to the new service
      labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.catapp.rule=Host(`don-jarvis.com`)"
+      - "traefik.http.routers.catapp.rule=Host(`catapp.localhost`)"
       - "traefik.http.routers.catapp.entrypoints=web"
       - "traefik.http.routers.catapp.service=catapp"
       - "traefik.http.services.catapp.loadbalancer.server.port=5000"
